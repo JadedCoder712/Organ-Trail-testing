@@ -17,7 +17,7 @@ while money > 1 and int(storemenu) > 0:
     if store is "0":
         storemenu="0"
     
-    if storemenu is "1":
+    if storemenu is "1": #tires
         tiresinp=input("How many tires would you like to buy at $30 each? ")
         maxtires=round(money-(int(tiresinp)*30))
         if maxtires < 0:
@@ -25,7 +25,7 @@ while money > 1 and int(storemenu) > 0:
         if maxtires >= 0:
             tires=tiresinp
             money=money-(int(tires)*30)
-            input("You have ${0} left.".format(money)) #tires
+            input("You have ${0} left.".format(money))
          
     if storemenu is "2":
         bulletsinp=input("How many bullets would you like to buy at $2 each?")
