@@ -10,7 +10,7 @@ while money > 1 and int(storemenu) > 0:
     if seventeenthirtyeight > 4:
         storemenu="0"
     if store is "Yes":
-        storemenu=input("Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters, press 0 to deny. ")
+        storemenu=input("Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters, press 0 to continue. ")
     if store is "No":
         storemenu="0"
         
@@ -21,11 +21,15 @@ while money > 1 and int(storemenu) > 0:
         if int(tires)<= 12:
             money=money-(int(tires)*30)
             print("You have ${0} left.".format(money))
-            
+         
     if storemenu is "2":
         bullets=input("How many bullets would you like to buy at $2 each?")
         maxbullets=money/int(bullets)
-        if int(bullets) > 
+        if int(bullets) > maxbullets:
+            print("You don't have enough money to buy all those!")
+        if int(bullets) <= maxbullets:
+            money=money-(int(bullets)*2)
+            print("You have ${0} left.".format(money))
         
 
         
