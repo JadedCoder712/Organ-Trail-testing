@@ -8,4 +8,6 @@ while welp is "Yes":
         money=money-(int(bullets)*5)
         print("You have ${0} left.".format(str(money)))
         tires=input("How many spare tires would you like to buy at $30 each?")
-        
+        money=money-(int(tires)*30)
+        print("You have ${0} left.".format(str(money)))
+    welp=input("Would you like to continue?")
