@@ -1,0 +1,11 @@
+name1=input("What is your first adventurer's name?")
+name2=input("What is your second adventurer's name?")
+money=360
+welp="Yes"
+while welp is "Yes":
+    while money > 0:
+        bullets=input("How many bullets do you want to buy at $5 each?")
+        money=money-(int(bullets)*5)
+        print("You have ${0} left.".format(str(money)))
+        tires=input("How many spare tires would you like to buy at $30 each?")
+        
