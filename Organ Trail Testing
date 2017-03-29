@@ -1,6 +1,7 @@
 name1=input("What is your first adventurer's name? ")
 name2=input("What is your second adventurer's name? ")
 name3=input("What is your third adventurer's name? ")
+town=input("Please select what town you would like to start in. 
 
 tires=0
 bullets=0
@@ -17,7 +18,7 @@ while money > 1 and int(storemenu) > 0:
     if store is "0":
         storemenu="0"
     
-    if storemenu is "1": #tires
+    if storemenu is "1":
         tiresinp=input("How many tires would you like to buy at $30 each? ")
         maxtires=round(money-(int(tiresinp)*30))
         if maxtires < 0:
@@ -46,6 +47,10 @@ while money > 1 and int(storemenu) > 0:
             filters=filtersinp
             money=money-(int(filters)*10)
             input("You have ${0} left.".format(money)) #gasmasks
+            
+if storemenu is "0":
+    input("You are in the town of Perkinsville. Please choose what you want to do.")
+    
         
     
         
