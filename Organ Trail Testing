@@ -2,12 +2,13 @@ name1=input("What is your first adventurer's name? ")
 name2=input("What is your second adventurer's name? ")
 money=360
 seventeenthirtyeight=0
+storemenu="1"
 welp="Yes"
 store=input("Would you like to buy something? ")
-while money > 1:
+while money > 1 and int(storemenu) > 0: 
     seventeenthirtyeight=seventeenthirtyeight+1
     if seventeenthirtyeight > 4:
-        money=0
+        storemenu="0"
     if store is "Yes":
         storemenu=input("Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters, press 0 to deny. ")
     if store is "No":
@@ -19,7 +20,9 @@ while money > 1:
             print("You don't have enough money to buy all those!")
         if int(tires)<= 12:
             money=money-(int(tires)*30)
-            print("You have ${0} left.".format(money)
+            print("You have ${0} left.".format(money))
+
+        
         
             
         
