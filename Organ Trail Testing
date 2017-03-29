@@ -1,7 +1,11 @@
 name1=input("What is your first adventurer's name? ")
 name2=input("What is your second adventurer's name? ")
 name3=input("What is your third adventurer's name? ")
-town=input("Please select what town you would like to start in. 
+true=True
+while true is True:
+    town=input("Please select what town you would like to start in. Press 1 for Chernobyl, press 2 for Perkinsville, press 3 for Townshend and press 4 for more information on each town.")
+    if town is "1":
+        
 
 tires=0
 bullets=0
