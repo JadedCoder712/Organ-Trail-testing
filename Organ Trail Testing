@@ -64,7 +64,8 @@ while money > 1 and int(storemenu) > 0:
             money=money-(int(filters)*10)
             input("You have ${0} left.".format(money)) #gasmasks
             
-    if store 
+    if storemenu is "4":
+        input("Tires you buy are kept as spares for your car in case one of your tires breaks. Bullets are used to hunt animals in order to get food. Gas mask filters are used to replace those that become clogged up through use. You will be brought back to the store.")
             
 if storemenu is "0":
     input("You are in the town of {0}. Please choose what you want to do.".format(town))
