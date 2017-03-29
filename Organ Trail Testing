@@ -24,6 +24,9 @@ while money > 1 and int(storemenu) > 0:
             
     if storemenu is "2":
         bullets=input("How many bullets would you like to buy at $2 each?")
+        maxbullets=money/int(bullets)
+        if int(bullets) > 
+        
 
         
         
