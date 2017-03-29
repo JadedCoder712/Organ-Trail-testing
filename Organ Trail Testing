@@ -21,6 +21,9 @@ while money > 1 and int(storemenu) > 0:
         if int(tires)<= 12:
             money=money-(int(tires)*30)
             print("You have ${0} left.".format(money))
+            
+    if storemenu is "2":
+        bullets=input("How many bullets would you like to buy at $2 each?")
 
         
         
