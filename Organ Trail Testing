@@ -17,6 +17,10 @@ while money > 1:
         tires=input("How many tires would you like to buy at $30 each? ")
         if int(tires) > 12:
             print("You don't have enough money to buy all those!")
+        if int(tires)<= 12:
+            money=money-(int(tires)*30)
+            print("You have ${0} left.".format(money)
         
+            
         
         
