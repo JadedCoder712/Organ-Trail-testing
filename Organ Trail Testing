@@ -5,4 +5,4 @@ welp="Yes"
 store=input("Would you like to buy something?")
 storemenu=input("Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters.")
 if storemenu is "1":
-    tires=input
+    tires=input("How many 
