@@ -1,5 +1,7 @@
 name1=input("What is your first adventurer's name? ")
 name2=input("What is your second adventurer's name? ")
+name3=input("What is your third adventurer's name? ")
+
 money=360
 seventeenthirtyeight=0
 storemenu="1"
@@ -16,22 +18,37 @@ while money > 1 and int(storemenu) > 0:
         
     if storemenu is "1":
         tires=input("How many tires would you like to buy at $30 each? ")
+        maxtires=round(money/int(tires))
         if int(tires) > 12:
-            print("You don't have enough money to buy all those!")
+            input("You don't have enough money to buy all those!")
         if int(tires)<= 12:
             money=money-(int(tires)*30)
-            print("You have ${0} left.".format(money))
+            input("You have ${0} left.".format(money)) #tires
          
     if storemenu is "2":
         bullets=input("How many bullets would you like to buy at $2 each?")
-        maxbullets=money/int(bullets)
+        maxbullets=round(money/int(bullets))
         if int(bullets) > maxbullets:
-            print("You don't have enough money to buy all those!")
+            input("You don't have enough money to buy all those!")
         if int(bullets) <= maxbullets:
             money=money-(int(bullets)*2)
-            print("You have ${0} left.".format(money))
+            input("You have ${0} left.".format(money)) #bullets
+            
+    if storemenu is "3":
+        filters=input("How many gas mask filters would you like to buy at $10 each?")
+        maxfilters=round(money/int(filters))
+        if int(filters) > maxfilters:
+            input("You don't have enough money to buy all those!")
+        if int(filters) <= maxfilters:
+            money=money-(int(filters)*10)
+            input("You have ${0} left.".format(money)) #gasmasks
+        
+    
         
 
+        
+        
+    
         
         
             
