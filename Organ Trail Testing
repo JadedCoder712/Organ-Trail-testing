@@ -3,10 +3,13 @@ name2=input("What is your second adventurer's name? ")
 money=360
 welp="Yes"
 store=input("Would you like to buy something? ")
-if store is "Yes":
-    storemenu=input("Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters. ")
-if store is "No":
-    storemenu="0"
-if storemenu is "1":
-    tires=input("How many tires would you like to buy at $30 each? ")
-    if tires > 
+while money > 1:
+    if store is "Yes":
+        storemenu=input("Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters, press 0 to deny. ")
+    if store is "No":
+        storemenu="0"
+    if storemenu is "1":
+        tires=input("How many tires would you like to buy at $30 each? ")
+        if tires > 12:
+            print("You don't have enough money to buy all those!")
+        
