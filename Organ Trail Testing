@@ -19,28 +19,28 @@ while money > 1 and int(storemenu) > 0:
         
     if storemenu is "1":
         tires=input("How many tires would you like to buy at $30 each? ")
-        maxtires=round(money/int(tires))
-        if int(tires) > maxtires:
+        maxtires=round(money-(int(tires)*30))
+        if maxtires < 0:
             input("You don't have enough money to buy all those!")
-        if int(tires)<= maxtires:
+        if maxtires >= 0:
             money=money-(int(tires)*30)
             input("You have ${0} left.".format(money)) #tires
          
     if storemenu is "2":
         bullets=input("How many bullets would you like to buy at $2 each?")
-        maxbullets=round(money/int(bullets))
-        if int(bullets) > maxbullets:
+        maxbullets=round(money-(int(bullets)*2))
+        if maxbullets < 0:
             input("You don't have enough money to buy all those!")
-        if int(bullets) <= maxbullets:
+        if maxbullets >= 0:
             money=money-(int(bullets)*2)
             input("You have ${0} left.".format(money)) #bullets
             
     if storemenu is "3":
         filters=input("How many gas mask filters would you like to buy at $10 each?")
-        maxfilters=round(money/int(filters))
-        if int(filters) > maxfilters:
+        maxfilters=round(money-(int(filters)*10))
+        if maxfilters < 0:
             input("You don't have enough money to buy all those!")
-        if int(filters) <= maxfilters:
+        if maxfilters >= 0:
             money=money-(int(filters)*10)
             input("You have ${0} left.".format(money)) #gasmasks
         
