@@ -3,9 +3,21 @@ name2=input("What is your second adventurer's name? ")
 name3=input("What is your third adventurer's name? ")
 true=True
 while true is True:
-    town=input("Please select what town you would like to start in. Press 1 for Chernobyl, press 2 for Perkinsville, press 3 for Townshend and press 4 for more information on each town.")
-    if town is "1":
-        
+    towninp=input("Please select what town you would like to start in. Press 1 for Chernobyl, press 2 for Perkinsville, press 3 for Townshend and press 4 for more information on each town.")
+    if towninp is "1":
+        town="Chernobyl"
+        input("You have selected {0} as your starting point.".format(town))
+        true=False
+    if towninp is "2":
+        town="Perkinsville"
+        input("You have selected {0} as your starting point.".format(town))
+        true=False
+    if towninp is "3":
+        town="Townshend"
+        input("You have selected {0} as your starting point.".format(town))
+        true=False
+    if towninp is "4":
+        input("Chernobyl has the most amount of radiation and is the most difficult. Perkinsville has slightly less radiation and is easier, but has much worse roads, which will wear down your tires quicker. Townshend is the easiest, with the least radiation.")  
 
 tires=0
 bullets=0
@@ -18,7 +30,7 @@ store=input("You will probably need to buy supplies. Press 1 to visit store, pre
 while money > 1 and int(storemenu) > 0: 
     if store is "1":
         input("You have {0} tires, {1} bullets, and {2} filters. You can buy some now.".format(tires, bullets, filters))
-        storemenu=input("You have ${0} to spend. Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters, press 0 to continue. ".format(money))
+        storemenu=input("You have ${0} to spend. Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters, press 4 to learn more about each supply type, press 0 to continue. ".format(money))
     if store is "0":
         storemenu="0"
     
@@ -52,8 +64,10 @@ while money > 1 and int(storemenu) > 0:
             money=money-(int(filters)*10)
             input("You have ${0} left.".format(money)) #gasmasks
             
+    if store 
+            
 if storemenu is "0":
-    input("You are in the town of Perkinsville. Please choose what you want to do.")
+    input("You are in the town of {0}. Please choose what you want to do.".format(town))
     
         
     
