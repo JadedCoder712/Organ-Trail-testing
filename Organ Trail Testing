@@ -2,18 +2,19 @@ name1=input("What is your first adventurer's name? ")
 name2=input("What is your second adventurer's name? ")
 name3=input("What is your third adventurer's name? ")
 
+tires=0
+bullets=0
+filters=0
 money=360
-seventeenthirtyeight=0
+#seventeenthirtyeight=0
 storemenu="1"
 welp="Yes"
-store=input("Would you like to buy something? ")
+store=input("You will probably need to buy supplies. Press 1 to visit store, press 0 to continue. ")
 while money > 1 and int(storemenu) > 0: 
-    seventeenthirtyeight=seventeenthirtyeight+1
-    if seventeenthirtyeight > 4:
-        storemenu="0"
-    if store is "Yes":
-        storemenu=input("Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters, press 0 to continue. ")
-    if store is "No":
+    if store is "1":
+        input("You have {0} tires, {1} bullets, and {2} filters. You can buy some now.".format(tires, bullets, filters))
+        storemenu=input("You have ${0} to spend. Press 1 to buy tires, press 2 to buy bullets, press 3 to buy gas mask filters, press 0 to continue. ".format(money))
+    if store is "0":
         storemenu="0"
         
     if storemenu is "1":
